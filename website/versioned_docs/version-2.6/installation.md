@@ -6,7 +6,7 @@ slug: /
 ---
 
 ```bash
-$ npm i maks1ms nestjs-telegraf telegraf
+$ npm i nestjs-telegraf telegraf
 ```
 
 Once the installation process is complete, we can import the `TelegrafModule` into the root `AppModule`.
