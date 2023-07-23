@@ -1,18 +1,28 @@
+function getNextVersionName() {
+  return 'Canary';
+}
+
+const BASE_GH_URL = 'https://github.com/maks1ms/nestjs-telegraf';
+
 module.exports = {
   title: 'NestJS Telegraf',
   tagline: 'Powerful Nest module for easy and fast creation Telegram bots',
-  url: 'https://nestjs-telegraf.hypeer.company',
+  url: 'https://nestjs-telegraf-maks1ms.vercel.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'hypeertech',
+  organizationName: 'maks1ms',
   projectName: 'nestjs-telegraf',
   themeConfig: {
     navbar: {
       title: 'NestJS Telegraf',
       items: [
         {
-          href: 'https://github.com/hypeertech/nestjs-telegraf',
+          type: 'docsVersionDropdown',
+          position: 'right',
+        },
+        {
+          href: BASE_GH_URL,
           label: 'GitHub',
           position: 'right',
         },
@@ -35,11 +45,7 @@ module.exports = {
           items: [
             {
               label: 'Discussions',
-              href: 'https://github.com/hypeertech/nestjs-telegraf/discussions',
-            },
-            {
-              label: 'Telegram',
-              href: 'https://t.me/nestjs_telegraf',
+              href: `${BASE_GH_URL}/discussions`,
             },
           ],
         },
@@ -48,16 +54,17 @@ module.exports = {
           items: [
             {
               label: 'Issues',
-              href: 'https://github.com/hypeertech/nestjs-telegraf/issues',
+              href: `${BASE_GH_URL}/issues`,
             },
             {
               label: 'Examples',
-              to: 'https://github.com/hypeertech/nestjs-telegraf/tree/master/sample/',
-            }
+              to: `${BASE_GH_URL}/tree/master/sample/`,
+            },
           ],
         },
       ],
-      copyright: `Copyright © 2019 - ${new Date().getFullYear()}, <a target="_blank" href="https://hypeer.company">Hypeer</a>, <a target="_blank" href="mailto:arthur.asimov.z0@gmail.com">Arthur Asimov</a> and <a target="_blank" href="https://github.com/bukhalo/nestjs-telegraf/graphs/contributors">Others</a>.`,
+      copyright: `Copyright © 2019 - 2023 <a target="_blank" href="https://hypeer.company">Hypeer</a>, <a target="_blank" href="mailto:arthur.asimov.z0@gmail.com">Arthur Asimov</a> and <a target="_blank" href="https://github.com/hypeertech/nestjs-telegraf/graphs/contributors">Others</a>.<br>
+      Copyright 2023 - <a target="_blank" href="https://github.com/Maks1mS">Maks1mS</a> and <a target="_blank" href="${BASE_GH_URL}/graphs/contributors">Others</a>`,
     },
   },
   presets: [
@@ -67,23 +74,22 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
-          editUrl:
-            'https://github.com/hypeertech/nestjs-telegraf/edit/master/website/',
+          editUrl: ({ docPath }) => {
+            const nextVersionDocsDirPath = 'docs';
+            return `${BASE_GH_URL}/edit/main/website/${nextVersionDocsDirPath}/${docPath}`;
+          },
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
+          versions: {
+            current: {
+              label: `${getNextVersionName()} 🚧`,
+            },
+          },
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
-  ],
-  plugins: [
-    [
-      require.resolve('docusaurus-gtm-plugin'),
-      {
-        id: 'GTM-PRP5KRP',
-      }
-    ]
   ],
 };
