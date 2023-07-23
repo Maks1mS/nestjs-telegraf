@@ -1,4 +1,4 @@
-# NestJS Telegraf ![npm](https://img.shields.io/npm/dm/nestjs-telegraf) ![GitHub last commit](https://img.shields.io/github/last-commit/bukhalo/nestjs-telegraf) ![NPM](https://img.shields.io/npm/l/nestjs-telegraf)
+# NestJS Telegraf ![npm](https://img.shields.io/npm/dm/@maks1ms/nestjs-telegraf) ![GitHub last commit](https://img.shields.io/github/last-commit/maks1ms/nestjs-telegraf) ![NPM](https://img.shields.io/npm/l/@maks1ms/nestjs-telegraf)
 
 <img align="right" width="95" height="148" title="NestJS logotype"
      src="https://nestjs.com/img/logo-small.svg">
@@ -17,18 +17,11 @@ This package uses the best of the NodeJS world under the hood. [Telegraf](https:
 - Ability to run multiple bots simultaneously.
 - Full support of NestJS guards, interceptors, filters and pipes!
 
-**User stories**
-- [Новогодняя история одного телеграм-бота на NestJS](https://habr.com/ru/company/tinkoff/blog/596287/) by [Tinkoff Bank](https://github.com/Tinkoff)
-- [The story of the creation of the personal telegram bot (40 articles!)](https://dev.to/endykaufman/i-decided-to-try-to-keep-a-twitter-history-of-rewriting-one-of-the-projects-im-starting--1e6p) by [@EndyKaufman](https://github.com/EndyKaufman)
-
-**Chat**
-
-* [Telegram](https://t.me/nestjs_telegraf)
 ## Installation
 
 ```bash
-$ npm i nestjs-telegraf telegraf
+$ npm i @maks1ms/nestjs-telegraf telegraf
 ```
 
 ## Documentation
-Check out the [documentation site](https://nestjs-telegraf.hypeer.company).
+Check out the [documentation site](https://nestjs-telegraf-maks1ms.vercel.app).
