@@ -1,5 +1,5 @@
 {
-  "name": "nestjs-telegraf",
+  "name": "@maks1ms/nestjs-telegraf",
   "version": "2.6.4",
   "description": "Telegraf module for NestJS",
   "keywords": [
@@ -14,18 +14,19 @@
     "bot api",
     "bot framework"
   ],
-  "homepage": "https://nestjs-telegraf.hypeer.company",
   "bugs": {
-    "url": "https://github.com/hypeertech/nestjs-telegraf/issues"
+    "url": "https://github.com/Maks1mS/nestjs-telegraf/issues"
   },
-  "repository": "git@github.com:hypeertech/nestjs-telegraf.git",
-  "funding": "https://hypeer.company/donate",
+  "repository": "git@github.com:Maks1mS/nestjs-telegraf.git",
   "license": "MIT",
   "author": "Hypeer <hello@hypeer.company>",
   "contributors": [
     {
       "name": "Arthur Asimov",
       "email": "arthur.asimov.z0@gmail.com"
+    },
+    {
+      "name": "Maxim Slipenko",
     }
   ],
   "main": "./dist/index.js",
