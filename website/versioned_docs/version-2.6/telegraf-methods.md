@@ -17,7 +17,7 @@ import {
   Help,
   On,
   Hears,
-} from 'nestjs-telegraf';
+} from '@maks1ms/nestjs-telegraf';
 import { TelegrafContext } from './common/interfaces/telegraf-context.interface.ts';
 
 @Update()

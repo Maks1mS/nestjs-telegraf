@@ -9,7 +9,7 @@ In some cases, you may need to run multiple bots at the same time. This can also
 ```typescript
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { TelegrafModule } from 'nestjs-telegraf';
+import { TelegrafModule } from '@maks1ms/nestjs-telegraf';
 
 @Module({
   imports: [
@@ -42,7 +42,7 @@ Please note that you shouldn't have multiple bots without a name, or with the sa
 You can also inject the `Bot` for a given bot:
 ```typescript
 import { Injectable } from '@nestjs/common';
-import { InjectBot, Telegraf, Context } from 'nestjs-telegraf';
+import { InjectBot, Telegraf, Context } from @maks1ms/nestjs-telegraf';
 
 @Injectable()
 export class EchoService {
