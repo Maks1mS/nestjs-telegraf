@@ -26,7 +26,7 @@
       "email": "arthur.asimov.z0@gmail.com"
     },
     {
-      "name": "Maxim Slipenko",
+      "name": "Maxim Slipenko"
     }
   ],
   "main": "./dist/index.js",
